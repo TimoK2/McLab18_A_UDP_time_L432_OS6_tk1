@@ -2,11 +2,11 @@
     "config": {
         "wifi-ssid": {
             "help": "WiFi SSID",
-            "value": "\"HAMKvisitor\""
+            "value": "\"XXXXXX\""
         },
         "wifi-password": {
             "help": "WiFi Password",
-            "value": "\"hamkvisitor\""
+            "value": "\"YYYYYYY\""
         },
         "esp-rx-pin": {
             "help": "ESP8266 module RX pin",

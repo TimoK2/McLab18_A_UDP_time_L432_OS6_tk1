@@ -15,7 +15,7 @@
  * L432KC 3V3 --- 1 3.3V
  * L432KC GND --- 2 GND
  *  
- * Timo Karppinen 16.9.2020
+ * Timo Karppinen 16.9.2020  Apache-2.0
  ***********************************/
 #include "mbed.h"
 
@@ -76,8 +76,8 @@ void scan_demo(WiFiInterface *wifi)
 
 //NTP server is a time server used for delivering timing information for networks.
 // Returns 32 bits for seconds and 32 bits for fraction of seconds. 
-#define ntpAddress "2.pool.ntp.org"
-//#define ntpAddress "time.mikes.fi"  // The VTT Mikes in Helsinki
+//#define ntpAddress "2.pool.ntp.org"
+#define ntpAddress "time.mikes.fi"  // The VTT Mikes in Helsinki
 #define ntpPort 123     // Typically 123 for every NTP server
     
 int main() {
@@ -122,6 +122,8 @@ int main() {
         if (timestamp < 0) {
             printf("An error occurred when getting the time. Code: %u\r\n", timestamp);
         } else {
+            printf("The timestamp seconds from the NTP server in\r\n  32 bit hexadecimal number is %X\r\n", timestamp);
+            printf("  decimal number is %u\r\n", timestamp);
             timestamp += (60*60*3);  //  GMT +3  for Finland for the summer time.
             printf("Current time is %s\r\n", ctime(&timestamp));
         }
