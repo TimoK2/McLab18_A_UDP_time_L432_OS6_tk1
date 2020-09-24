@@ -101,7 +101,8 @@ int main() {
     
     printf("Success\n\n");
     printf("MAC: %s\n", esp.get_mac_address());
-    printf("IP: %s\n", esp.get_ip_address(&deviceIP));
+    esp.get_ip_address(&deviceIP);
+    printf("IP: %s\n", deviceIP.get_ip_address());
     printf("Netmask: %s\n", esp.get_netmask());
     printf("Gateway: %s\n", esp.get_gateway());
     printf("RSSI: %d\n\n", esp.get_rssi());
