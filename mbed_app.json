@@ -9,12 +9,12 @@
             "value": "\"YYYYYYY\""
         },
         "esp-rx-pin": {
-            "help": "ESP8266 module RX pin",
-            "value": "PB_7"
+            "help": "ESP8266 module Tx pin, Mc Rx",
+            "value": "PA_10"
         },
         "esp-tx-pin": {
-            "help": "ESP8266 module TX pin",
-            "value": "PB_6"
+            "help": "ESP8266 module Rx pin, Mc Tx",
+            "value": "PA_9"
         }
     },
     "target_overrides": {

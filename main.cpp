@@ -12,10 +12,13 @@
  * L432KC --- MOD WIFI ESP8266 from OLIMEX
  * L432KC D5=PB6=UART1TX --- 3 RXD
  * L432KC D4=PB7=UART1RX --- 4 TXD
+ * or
+ * L432KC D1=PA9=UART1TX --- 3 RXD
+ * L432KC D0=PA10=UART1RX --- 4 TXD
  * L432KC 3V3 --- 1 3.3V
  * L432KC GND --- 2 GND
  *  
- * Timo Karppinen 16.9.2020  Apache-2.0
+ * Timo Karppinen 20.9.2021  Apache-2.0
  ***********************************/
 #include "mbed.h"
 
@@ -88,6 +91,7 @@ int main() {
     
     //Store device IP
     SocketAddress deviceIP;
+    ThisThread::sleep_for(500ms); // waiting for the ESP8266 to wake up.
       
     scan_demo(&esp);
 
