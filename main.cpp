@@ -4,7 +4,7 @@
  ***********************************
  * NTP time client example
  * A microcontroller board and MOD WIFI ESP8266
- * https://os.mbed.com/docs/mbed-os/v6.2/apis/wi-fi.html
+ * https://os.mbed.com/docs/mbed-os/v6.15/apis/wi-fi.html
  * https://os.mbed.com/teams/ESP8266/code/esp8266-driver/
  * https://www.olimex.com/Products/IoT/ESP8266/MOD-WIFI-ESP8266/open-source-hardware
  * https://os.mbed.com/teams/ESP8266/code/esp8266-driver/docs/tip/classESP8266Interface.html
@@ -18,7 +18,7 @@
  * L432KC 3V3 --- 1 3.3V
  * L432KC GND --- 2 GND
  *  
- * Timo Karppinen 20.9.2021  Apache-2.0
+ * Timo Karppinen 12.12.2021  Apache-2.0
  ***********************************/
 #include "mbed.h"
 
